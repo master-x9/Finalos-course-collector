@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # FinalsOS Course Collector
 
 A local-first Chrome extension that asks before saving course video transcripts and exports reading lessons as clean, structured `.txt` study notes.
@@ -92,50 +91,3 @@ finalsos-course-collector/
 ├── CONTRIBUTING.md
 ├── SECURITY.md
 └── README.md
-```
-
-## Permissions
-
-- `storage`: remembers the automatic-prompt ON/OFF preference locally in Chrome extension storage.
-- `webRequest`: detects requests for configured course transcript resources.
-- Host permission for the configured transcript media host: allows the extension service worker to fetch the SRT contents for saving.
-- Content script match for `https://learning.ccbp.in/*`: allows the extension to inspect supported reading containers on course pages.
-
-No broad `cookies`, `history`, or all-sites access is requested.
-
-## Privacy and safe handling
-
-- A file is created only after you confirm in a save prompt.
-- Signed S3 transcript URLs are handled in runtime memory and are not written to study-file metadata or logs by the extension.
-- Captured reading content and transcripts are not uploaded to a server by this project.
-- The only persisted extension preference is whether automatic prompts are enabled.
-- Keep signed request URLs, cookies, authorization headers, and personal course information out of public issues and screenshots.
-
-## Development checks
-
-Requires Node.js. No npm dependencies are needed.
-
-```bash
-node scripts/check-extension.mjs
-```
-
-The check validates the Manifest V3 structure, required source-file references, and JavaScript syntax.
-
-## Limitations
-
-- This is a Chrome Manifest V3 extension; other browsers are not currently tested.
-- It depends on the selectors and transcript URL pattern described above.
-- MCQ choices are extracted from recognizable visible option elements; layout variations may require selector updates.
-- The extension does not determine correct answers or capture hidden answer keys.
-- A platform update can change DOM structure or request behavior. Re-test exports after significant site changes.
-
-## Project status and affiliation
-
-This is an independent study utility and is not affiliated with or endorsed by CCBP, NxtWave, or the learning platform. Use it only with content you are authorized to access and save, and follow your institution's rules.
-
-## License
-
-No license is included yet. Unless the repository owner adds a license, reuse, redistribution, and derivative works are not automatically granted. Choose a license before inviting outside contributions or redistribution.
-=======
-# Finalos-course-collector
->>>>>>> b10131e32b4f26af084ac760c985bf7d39544087
