@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "FinalsOS Course Collector",
+  "version": "0.4.0",
+  "description": "Ask before saving course video transcripts and reading material as study files.",
+  "permissions": [
+    "storage",
+    "webRequest"
+  ],
+  "host_permissions": [
+    "https://nkb-backend-ccbp-media-static.s3.amazonaws.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://learning.ccbp.in/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "FinalsOS Collector",
+    "default_popup": "popup.html"
+  }
+}

@@ -1,0 +1,10 @@
+.DS_Store
+Thumbs.db
+*.crdownload
+*.log
+.env
+.env.*
+exports/
+*.srt
+*.session
+*.har
