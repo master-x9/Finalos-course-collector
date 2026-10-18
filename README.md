@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # FinalsOS Course Collector
 
 A local-first Chrome extension that asks before saving course video transcripts and exports reading lessons as clean, structured `.txt` study notes.
@@ -135,3 +136,6 @@ This is an independent study utility and is not affiliated with or endorsed by C
 ## License
 
 No license is included yet. Unless the repository owner adds a license, reuse, redistribution, and derivative works are not automatically granted. Choose a license before inviting outside contributions or redistribution.
+=======
+# Finalos-course-collector
+>>>>>>> b10131e32b4f26af084ac760c985bf7d39544087
