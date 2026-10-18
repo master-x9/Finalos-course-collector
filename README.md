@@ -23,8 +23,7 @@ A local-first Chrome extension that asks before saving course video transcripts 
 
 ### Extension settings
 
-![Extension settings popup](screenshots/extension-settings-popup.png)
-
+![Extension settings popup](screenshots/extension-settings-popup.png?v=2)
 ## Install in Chrome
 
 1. Download this repository as a ZIP and extract it, or clone it with Git.
